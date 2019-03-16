@@ -1,26 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prototype inlämningsuppgift 1</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="app.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body data-ng-app="" style="padding:0; margin:0; min-height: 3984px;">
 
+    <!-- Header -->
     <header>
-        <div id="topmenu" style="height: 40px;"></div>
-        <div id="menu" style="height: 140px;"></div>
+        <!-- Top Menu -->
+        <div id="topmenu">
+            <div class="topmenuContainer">
+                <div class="row">
+                    <div id="socialMedia" class="col-3">
+                        <i class="fab fa-facebook-f sLink"></i>
+                        <i class="fab fa-twitter sLink"></i>
+                        <i class="fab fa-behance sLink"></i>
+                        <i class="fab fa-pinterest sLink"></i>
+                        <i class="fab fa-youtube sLink"></i>
+                    </div>
+                    <div id="faq" class="col-1">FAQ</div>
+                    <div id="terms" class="col-7">TERMS</div>
+                    <div id="emailLink" class="col-1">
+                        <i class="far fa-envelope"><span class="pl-2">info@webmail.com</span></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- logo, navbar -->
+        <div id="menu">
+            <div class="topmenuContainer">
+                <div class="row menuRow">
+                    <img src="images/logotype_transparent.png" class="col-2">
+
+
+                    <div class="dropdown col-1 pt-3">
+                        <button class="btn languageButton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            EN <i class="fas fa-angle-down"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">SWE</a>
+                            <a class="dropdown-item" href="#">NOR</a>
+                            <a class="dropdown-item" href="#">DAN</a>
+                        </div>
+                    </div>
+
+                    <div class="phoneNumber col-2">
+                        +90878 87 878 7
+                    </div>
+
+                    <div class="menuOptions col-5 pt-3 pl-5">
+                        <a href="#" class="sLink">Home</a>
+                        <a href="#" class="sLink">About</a>
+                        <a href="#" class="sLink">Services</a>
+                        <a href="#" class="sLink">Pages</a>
+                        <a href="#" class="sLink">News</a>
+                        <a href="#" class="sLink">Contact</a>
+                    </div>
+
+                    <div class="quote col-2">
+                        GET A QUOTE
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </header>
+
+    <!-- Main -->
     <main>
-        <div id="banner" style="height: 400px;"></div>
-        <div id="content" style="height: 2795px;"></div>
+
+        <!-- Banner -->
+        <div id="banner">
+            <p id="topBannerText">DIGITAL MARKETING</p>
+            <p id="middleBannerText">Product Store</p>
+            <div id="bannerLinks">
+                <a href="#">Home </a>
+                <p> | </p>
+                <a href="#"> Shop</a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div id="content">
+            <div class="container">
+
+                <!-- Shipping tags -->
+                <div class="shippingTags">
+                    <div class="row">
+                        <div class="card mb-3 col-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/truck.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">Free Shipping</h5>
+                                        <p class="card-text">Orders over $100</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/clock.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">Free Return</h5>
+                                        <p class="card-text">In 30 days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/lock.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">100% secure</h5>
+                                        <p class="card-text">Shipping</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/pricetag.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">Best Price</h5>
+                                        <p class="card-text">Granted</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sorting -->
+
+                <div class="sortSearch">
+                    <div class="row no-gutters">
+                        <div class="gridButton col-1 gridListButton">
+                            <a href="#"><i class="fas fa-th"></i></a>
+                        </div>
+
+                        <div class="listButton col-1 gridListButton">
+                            <a href="#"><i class="fas fa-bars"></i></a>
+                        </div>
+                        <p id="numberShowing" class=" col-2 offset-md-2">Showing 1-12 out of 30 results</p>
+
+
+                        <div class="dropdown col-2">
+                            <button class="btn sortButton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sort By <i class="fas fa-angle-down"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Alternative 1</a>
+                                <a class="dropdown-item" href="#">Alternative 2</a>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Searching -->
+
+                        <div class="searchBorderBox col-4">
+                            <div class="input-group searchBox">
+                                <input type="text" class="form-control" placeholder="Search from here...."
+                                    aria-label="Search from here...." aria-describedby="basic-addon2" id="searchInput">
+                                <div class="input-group-append">
+                                    <span class="input-group-text mag-glass" id="basic-addon2"><i
+                                            class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Cards -->
+
+
+
+
+            </div>
+
+
+        </div>
     </main>
     <footer>
-        <div id="footer" style="height: 610px;"></div>
+        <div id="footer"></div>
     </footer>
-    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
